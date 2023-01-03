@@ -1,17 +1,17 @@
-let modelo
-let ano
-let valor
+let modelo = []
+let ano = []
+let valor = []
 let carroMaisCaro = 0
 let carroMaisBarato = 0
 let mediaValores = 0
 
 for (let i = 0; i < 3; i++) {
-    modelo = prompt(`Qual o modelo do carro?`)
-    ano = prompt(`Qual o ano do carro?`)
-    valor = parseInt(prompt(`Qual o valor do carro?`))  
+    modelo[i] = prompt(`Qual o modelo do carro?`)
+    ano[i] = prompt(`Qual o ano do carro?`)
+    valor[i] = parseInt(prompt(`Qual o valor do carro?`))  
 
-    if(valor > carroMaisCaro){
-        carroMaisCaro = valor
+    if(valor[i] > carroMaisCaro){
+        carroMaisCaro = valor[i]
     }
 
     mediaValores = mediaValores + valor
