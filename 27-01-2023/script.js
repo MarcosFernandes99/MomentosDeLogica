@@ -1,22 +1,28 @@
 // OLÁ MUNDDO
 
-let input = [1,0,0,0,1], n = 1
+let input = [1,0,0,0,1], n = 2
+let array = []
 
 let output = false
 
 input.forEach((e, index) => {
-    console.log(e)
-    console.log(index)
-    if(e[index] === 0 && e[index + 1] === 0 && e[index + 2] === 0){
+   
+    if(e === 0){
+        array.push(e)
+    }
+
+    if(array.length === 2){
         n = n - 1
     }
 })
 
-console.log(n)
+console.log("Numero de flores que restaram plantar:" + n)
 
 if(n === 0){
-    output === true
+    output = true
 }
 
 console.log(output)
+
+
 
